@@ -49,15 +49,15 @@
             </ul>
         </header>
         <main>
+            @if(session('msg'))
+                <p class="msg">{{ session('msg') }}</p>
+            @endif
+            @if(session('err'))
+                <p class="err">{{ session('err') }}</p>
+            @endif 
             <div class="container-fluid">
                 <div class="row corpo">
-                    @if(session('msg'))
-                        <p class="msg">{{ session('msg') }}</p>
-                    @endif
-                    @if(session('err'))
-                        <p class="err">{{ session('err') }}</p>
-                    @endif
-                    @yield('content')
+                @yield('content')
                 </div>
             </div>
         </main>
@@ -67,7 +67,7 @@
         <ul class="separador"><li> | </li></ul>
         <ul class="footer-li">
             <li class="nav-item">
-                <a href="https://www.github.com/sassmatheus" target="_blank" class="nav-link">Repositório</a>
+                <a href="https://github.com/sassmatheus/projeto-dw2" target="_blank" class="nav-link">Repositório</a>
             </li>
         </ul>
     </footer>

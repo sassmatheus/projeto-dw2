@@ -12,7 +12,7 @@
         @method('PUT')
         <div class="form-group">
             <label for="modelo">Nome do modelo:</label>
-            <input type="text" class="form-control" id="modelo" name="modelo" placeholder="Modelo do produto" value="{{ $product->modelo }}">
+            <input type="text" class="form-control" id="modelo" name="modelo" placeholder="Modelo do produto" value="{{ $product->modelo }}" required>
         </div>
         <div class="form-group">
             <label for="fabricante">Fabricante:</label>
@@ -31,11 +31,11 @@
         </div>
         <div class="form-group">
             <label for="descricao">Configuração/descrição:</label>
-            <textarea name="descricao" id="descricao" class="form-control" placeholder="Insira a descrição do produto">{{ $product->descricao }}</textarea>
+            <textarea name="descricao" id="descricao" class="form-control" placeholder="Insira a descrição do produto" required>{{ $product->descricao }}</textarea>
         </div>
         <div class="form-group">
             <label for="preco">Preço:</label>
-            <input type="number" class="form-control" id="preco" name="preco" step="0.01" value="{{ $product->preco }}">
+            <input type="number" class="form-control" id="preco" name="preco" step="0.01" value="{{ $product->preco }}" maxlength="5" required>
         </div>
         <div class="form-group">
             <label for="image">Imagem do produto:</label>

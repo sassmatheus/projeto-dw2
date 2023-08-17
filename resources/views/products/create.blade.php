@@ -10,7 +10,7 @@
         @csrf
         <div class="form-group">
             <label for="modelo">Nome do modelo:</label>
-            <input type="text" class="form-control" id="modelo" name="modelo" placeholder="Modelo do produto">
+            <input type="text" class="form-control" id="modelo" name="modelo" placeholder="Modelo do produto" required>
         </div>
         <div class="form-group">
             <label for="fabricante">Fabricante:</label>
@@ -28,15 +28,15 @@
         </div>
         <div class="form-group">
             <label for="descricao">Configuração/descrição:</label>
-            <textarea name="descricao" id="descricao" class="form-control" placeholder="Insira a descrição do produto"></textarea>
+            <textarea name="descricao" id="descricao" class="form-control" placeholder="Insira a descrição do produto" required></textarea>
         </div>
         <div class="form-group">
             <label for="preco">Preço:</label>
-            <input type="number" class="form-control" id="preco" name="preco" step="0.01">
+            <input type="number" class="form-control" id="preco" name="preco" step="0.01" required>
         </div>
         <div class="form-group">
             <label for="image">Imagem do produto:</label>
-            <input type="file" id="image" name="image" class="form-control-file">
+            <input type="file" id="image" name="image" class="form-control-file" required>
         </div>
         <input type="submit" class="btn btn-primary" value="Registrar produto">
     </form>

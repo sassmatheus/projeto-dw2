@@ -19,7 +19,7 @@
                     <img src="/img/products/{{ $product->image }}" alt="{{ $product->modelo }}">
                     <p class="card-participants">Fabricante: {{ $product->fabricante }}</p>
                     <p class="card-participants">R$ {{ $product->preco }}</p>
-                    <a href="/products/{{ $product->id }}" class="btn btn-primary">Detalhes</a>
+                    <a href="/products/{{ $product->id }}" class="btn btn-primary details">Detalhes</a>
                 </div>
             </div>
         @endforeach
